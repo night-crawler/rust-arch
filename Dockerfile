@@ -9,3 +9,4 @@ RUN pacman -Sy base-devel --noconfirm
 RUN pacman -Sy glibc --noconfirm
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN cargo install cargo-arch
+RUN rustup default stable
