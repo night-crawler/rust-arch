@@ -11,7 +11,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     PATH=/usr/local/cargo/bin:$PATH
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-RUN cargo install cargo-arch
+RUN cargo install cargo-arch cargo-get
 RUN rustup default stable
 
 RUN useradd -s /bin/sh -m user
